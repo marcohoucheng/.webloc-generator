@@ -6,23 +6,27 @@ This python script renames every file in every folder within the directory to `f
 
 Simply put this script in the main folder location and run it, i.e.
 
+```
 main_folder
-| main.py
-| folder_1
-  | file_xyz
-  | file_987
-| folder_2
-  | file_abc
+|- main.py
+|- folder_1
+  |- file_xyz
+  |- file_987
+|- folder_2
+  |- file_abc
+```
 
 will be renamed to
 
+```
 main_folder
-| main.py
-| folder_1
-  | file_000
-  | file_001
-| folder_2
-  | file_002
+|- main.py
+|- folder_1
+  |- folder_1_000
+  |- folder_1_001
+|- folder_2
+  |- folder_2_002
+```
 
 ## To do
 

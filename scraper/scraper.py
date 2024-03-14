@@ -30,7 +30,7 @@ for year in years:
     os.makedirs(download_directory, exist_ok = True)
 
     # Download each PDF
-    for url in links:
+    for i, url in enumerate(links):
         # Get the file name by splitting the URL
         file_name = url.split('/')[-1]
         
@@ -45,9 +45,9 @@ for year in years:
             # Write the content to the file
             with open(file_path, 'wb') as file:
                 file.write(response.content)
-            print(f'Downloaded {url}')
+            print(f'({i}/{len(links)}) Downloaded {url}')
         else:
-            print(f'Failed to download {url}')
+            print(f'({i}/{len(links)}) Failed to download {url}')
 
 # Closing the webdriver
 driver.close()

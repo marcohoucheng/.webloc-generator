@@ -23,6 +23,7 @@ for year in years:
     if year == '2017':
         # Modify each link to include the full URL
         links = [base_url + link.replace('../', '') for link in links]
+        # Remove duplicates
         links = list(set(links))
 
     # Directory where you want to save the downloaded PDFs

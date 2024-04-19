@@ -1,4 +1,4 @@
-# Rename files
+# Rename files within folders
 
 This python script renames every file in every folder within the directory to `folder_xxx`, where `xxx` increments from 0.
 
